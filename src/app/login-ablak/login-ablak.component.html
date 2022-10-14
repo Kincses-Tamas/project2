@@ -1,11 +1,21 @@
-<div>
+<div class="login" *ngIf="!loggedin">
     <form >
-        <label for="username">Username:</label>
-        <input name="username" id="username" type="text">
+        <label for="username">{{labelUsername}}</label>
+        <input name="username" id="username" type="text" [(ngModel)]="username">
         <br>
-        <label for="password">Password:</label>
-        <input name="password" id="password" type="text">
+        <label for="password">{{labelPassword}}</label>
+        <input name="password" id="password" type="text"[(ngModel)]="password">
         <br>
-        <input type="submit" value="Belépés">
+        <input type="button" value="{{labelSubmit}}" (click)="kattint()">
+        <input type="reset" [value]="labelReset">
     </form>
+</div>
+
+<div class="login" *ngIf="loggedin">
+        <label for="username">Üdvözöljük {{username}}!</label>
+        <input type="button" value=Logout (click)="logout()">
+</div>
+
+<div class="error" *ngIf="error!=''">
+    {{error}}
 </div>
