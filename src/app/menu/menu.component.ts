@@ -14,15 +14,15 @@ export class MenuComponent implements OnInit {
     },
     {
       title:"Termékek",
-      link:"",
+      link:"termekek",
     },
     {
       title:"Kapcsolat",
-      link:"",
+      link:"kapcsolat",
     },
     {
       title:"Elérhetőségek",
-      link:"",
+      link:"elerhetosegek",
     },
   ];
 

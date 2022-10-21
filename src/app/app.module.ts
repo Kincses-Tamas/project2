@@ -8,6 +8,10 @@ import { FejlecComponent } from './fejlec/fejlec.component';
 import { LablecComponent } from './lablec/lablec.component';
 import { FormsModule } from '@angular/forms';
 import { MenuComponent } from './menu/menu.component';
+import { TermekekComponent } from './termekek/termekek.component';
+import { NyitooldalComponent } from './nyitooldal/nyitooldal.component';
+import { KapcsolatComponent } from './kapcsolat/kapcsolat.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -15,12 +19,16 @@ import { MenuComponent } from './menu/menu.component';
     LoginAblakComponent,
     FejlecComponent,
     LablecComponent,
-    MenuComponent
+    MenuComponent,
+    TermekekComponent,
+    NyitooldalComponent,
+    KapcsolatComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
